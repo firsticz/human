@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Free Bulma template</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" rel="stylesheet">
     <!-- Bulma Version 0.7.4-->
     <!-- <link rel="stylesheet" type="text/css" href="login.css"> -->
@@ -26,9 +26,13 @@
     margin-top: -70px;
     padding-bottom: 20px;
   }
+  img {
+    height: auto;
+    max-width: 50%;
+}
   .avatar img {
     padding: 5px;
-    background: #fff;
+    background: #0c0c0c;
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
@@ -41,8 +45,8 @@
   }
   p.subtitle {
     padding-top: 1rem;
-  
-    </style>
+  }
+</style>
 </head>
 
 <body>
@@ -54,7 +58,7 @@
                     <p class="subtitle has-text-grey">Please login to proceed.</p>
                     <div class="box">
                         <figure class="avatar">
-                            <img src="https://placehold.it/128x128">
+                            <img src="http://localhost/human/img/test.png">
                         </figure>
                         <form>
                             <div class="field">
@@ -86,12 +90,13 @@
             </div>
         </div>
     </section>
-
+   
     <script>
         function myFunction() {
-          location.replace("menu.html")
+          location.replace("http://localhost/human/");
         }
-        </script>
+    </script>
+  
 </body>
 
 </html>
