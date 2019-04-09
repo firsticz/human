@@ -6,7 +6,9 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="main.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet-2018-a42a36b295.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet-2018-a42a36b295.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 </head>
 <body>
@@ -15,7 +17,7 @@
     <div class="container">
       <div class="row">
         <div class="header-logo">
-          <a href="https://1112.com"><img class="logo" src="img/test.png"></a>
+          <a href="http://localhost/human/"><img class="logo" src="img/test.png"></a>
         </div>
         <div class="header-location-container">
 
@@ -26,12 +28,10 @@
                                   <li class="user-menu no-border hidden-xs hidden-sm hidden-md">
                     <a class="login" href="http://localhost/human/welcome/login"><i class="icon icon-user icon-hw"></i> เข้าสู่ระบบ</a> / <a class="signup" href="http://localhost/human/welcome/login">ลงทะเบียน</a>
                   </li>
-                                <li class="lang">
-                                      <a href="">EN</a>
-                                  </li>
+                                
                 <li>
                   <div id="cart" class="cart-btn" ng-controller="cartController">
-                    <a href="javascript:void(0);"><i class="icon icon-check icon-hw"></i> <span class="item-count">0</span></a>
+                    <a href="javascript:void(0);"><i class="fas fa-cart-plus"></i> <span class="item-count">0</span></a>
                     <div class="cart-container">
 	<div class="cart-empty">
 		<div class="cart-icon">
@@ -91,13 +91,13 @@
                 <a href=""></a>
               </li>
               <li>
-                <a href="">ประเภทอาหาร</a>
+                <a href="">อาหาร</a>
               </li>
                         <li>
-              <a href="">พิซซ่า พัฟ</a>
+              <a href="">เครื่องดื่ม</a>
             </li>
             <li>
-              <a href="">อาหารจานเดียว</a>
+              <a href="">ของหวาน</a>
             </li>
             <li>
               <a href="">สลัด</a>
@@ -135,12 +135,12 @@
 </div> -->
 				<section class="product">
 	<div class="container item-container" ng-controller="itemController" ng-init="init()">
-		<h1 class="heading">อาหาร</h1>
+		<h1 class="heading"><font color="#000"> อาหาร </font></h1>
 
 		
 		<div class="category">
 			<!----><h3 class="category-list ng-hide active" ng-class="(category.category_id == selected_category? 'active':'')" ng-repeat="category in brand_categories" ng-show="category.category_id != 0" ng-click="changeCategory(category.category_id)">
-				ไม่มีหมวดหมู่
+			<font color="#000"> อาหารคาว </font>
 			</h3><!---->
 		</div>
 
@@ -152,7 +152,7 @@
 		<img class="product-image" ng-src="img/pat.png" src="img/pat.png">
 	</div>
 	<div class="item-content-container">
-		<div class="item-name">
+		<div class="item-name" style="padding-top: 10%;">
 			<h1>ข้าวผัด</h1>
 		</div>
 		
@@ -160,8 +160,8 @@
 </div>
 
 <div class="item-footer">
-		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
-			<span class="left price">129 ฿</span>
+		<button class="btn add-to-cart non-pizza-item btn-red btn-block ">
+			<span class="left price">30 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
 				<img src="https://1112.minorcdn.com/1112/public/images/spinner.svg">
@@ -172,11 +172,11 @@
 				</div><!----><div class="flex-item" ng-repeat="item in items | filter: { brand_category: { category_id: category.category_id } }">
 					<div class="product-item">
 	<div class="item-image">
-		<img class="product-image" ng-src="img/kai.png" src="img/kai.png">
+		<img class="product-image" ng-src="img/kai.jpg" src="img/kai.jpg">
 	</div>
 	<div class="item-content-container">
-		<div class="item-name">
-			<h1>ไก่ทอด</h1>
+		<div class="item-name" style="padding-top: 10%;">
+			<h1>ผัดผักบุ้ง</h1>
 		</div>
 		
 	</div>
@@ -185,7 +185,7 @@
 <div class="item-footer">
 			
 		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
-			<span class="left price">129 ฿</span>
+			<span class="left price">20 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
 				<img src="https://1112.minorcdn.com/1112/public/images/spinner.svg">
@@ -199,8 +199,8 @@
 		<img class="product-image" ng-src="img/tomyum.png" src="img/tomyum.png">
 	</div>
 	<div class="item-content-container">
-		<div class="item-name">
-			<h1>ต้มยำกุ้ง</h1>
+		<div class="item-name" style="padding-top: 10%;">
+			<h1>ไข่เจียว</h1>
 		</div>
 		
 	</div>
@@ -209,7 +209,7 @@
 <div class="item-footer">
 			
 		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
-			<span class="left price">129 ฿</span>
+			<span class="left price">25 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
 				<img src="https://1112.minorcdn.com/1112/public/images/spinner.svg">
@@ -223,7 +223,7 @@
 		<img class="product-image" ng-src="img/yum.png" src="img/yum.png">
 	</div>
 	<div class="item-content-container">
-		<div class="item-name">
+		<div class="item-name" style="padding-top: 10%;">
 			<h1>ยำวุ้นเส้น</h1>
 		</div>
 		
@@ -233,7 +233,7 @@
 <div class="item-footer">
 			
 		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
-			<span class="left price">129 ฿</span>
+			<span class="left price">40 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
 				<img src="https://1112.minorcdn.com/1112/public/images/spinner.svg">
@@ -247,7 +247,7 @@
 		<img class="product-image" ng-src="img/patk.png" src="img/patk.png">
 	</div>
 	<div class="item-content-container">
-		<div class="item-name">
+		<div class="item-name" style="padding-top: 10%;">
 			<h1>ผัดกะเพรา</h1>
 		</div>
 		
@@ -257,7 +257,7 @@
 <div class="item-footer">
 			
 		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
-			<span class="left price">129 ฿</span>
+			<span class="left price">40 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
 				<img src="https://1112.minorcdn.com/1112/public/images/spinner.svg">
