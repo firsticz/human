@@ -26,7 +26,7 @@
             <div class="menu-right">
               <ul class="menu screen">
                                   <li class="user-menu no-border hidden-xs hidden-sm hidden-md">
-                    <a class="login" href="http://localhost/human/welcome/login"><i class="icon icon-user icon-hw"></i> เข้าสู่ระบบ</a> / <a class="signup" href="http://localhost/human/welcome/login">ลงทะเบียน</a>
+                    <a class="login" href="http://localhost/human/welcome/login"><i class="icon icon-user icon-hw"></i> เข้าสู่ระบบ</a>
                   </li>
                                 
                 <li>
@@ -106,7 +106,7 @@
               <a href="">อาหารรองท้อง</a>
             </li>
             <li>
-              <a href="">ของหวานและเครื่องดื่ม</a>
+              <a href="">รายการอาหาร</a>
             </li>
             
            
@@ -160,7 +160,7 @@
 </div>
 
 <div class="item-footer">
-		<button class="btn add-to-cart non-pizza-item btn-red btn-block ">
+		<button class="btn add-to-cart non-pizza-item btn-red btn-block " onclick="conferm()">
 			<span class="left price">30 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
@@ -184,7 +184,7 @@
 
 <div class="item-footer">
 			
-		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
+		<button class="btn add-to-cart non-pizza-item btn-red btn-block " onclick="conferm()">
 			<span class="left price">20 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
@@ -208,7 +208,7 @@
 
 <div class="item-footer">
 			
-		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
+		<button class="btn add-to-cart non-pizza-item btn-red btn-block " onclick="conferm()">
 			<span class="left price">25 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
@@ -232,7 +232,7 @@
 
 <div class="item-footer">
 			
-		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
+		<button class="btn add-to-cart non-pizza-item btn-red btn-block " onclick="conferm()">
 			<span class="left price">40 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
@@ -256,7 +256,7 @@
 
 <div class="item-footer">
 			
-		<button class="btn add-to-cart non-pizza-item btn-red btn-block " ng-click="addItem($event.target, item)" ng-disabled="!checkItemAvaiable(item)">
+		<button class="btn add-to-cart non-pizza-item btn-red btn-block " onclick="conferm()">
 			<span class="left price">40 ฿</span>
 			<span class="right txt"><i class="fa fa-plus"></i> <i class="fa fa-shopping-basket"></i></span>
 			<span class="loading">
@@ -272,6 +272,16 @@
 	</div>
 </section>
 			</section>
-
+<script>
+	function conferm(){
+		var txt;
+  var r = confirm("ยืนยันการสั่ง!\nEither OK or Cancel.\n");
+  if (r == true) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+	}
+</script>
 </body>
 </html>

@@ -63,7 +63,7 @@
                         <form>
                             <div class="field">
                                 <div class="control">
-                                    <input class="input is-large" type="email" placeholder="Your Email">
+                                    <input class="input is-large" type="email" placeholder="username">
                                 </div>
                             </div>
 
@@ -93,6 +93,7 @@
    
     <script>
         function myFunction() {
+          alert("เข้าสู่ระบบสำเร็จ")
           location.replace("http://localhost/human/");
         }
     </script>
