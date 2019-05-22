@@ -9,6 +9,7 @@
   <meta name="author" content="">
 
   <title>Wongnok</title>
+  <link rel="shortcut icon" href="<?php echo base_url() ?>assets/img/logos.png" />
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
