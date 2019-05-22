@@ -13,9 +13,9 @@
 
         <h1 class="my-4"><img class='illustration' src="<?php echo base_url() ?>assets/img/logos.png" alt="" ></h1>
         <div class="list-group">
-          <a href="#" class="list-group-item">อาหาร</a>
-          <a href="#" class="list-group-item">เครื่องดื่ม</a>
-          <a href="#" class="list-group-item">Category 3</a>
+          <a href="<?php echo base_url() ?>welcome/food" class="list-group-item">อาหาร</a>
+          <a href="<?php echo base_url() ?>welcome/drink" class="list-group-item">เครื่องดื่ม</a>
+          <a href="#" class="list-group-item">ประวัติการสั่งอาหาร</a>
         </div>
 
       </div>
@@ -31,13 +31,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+              <img class="d-block img-fluid" src="<?php echo base_url() ?>assets/img/promo1.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+              <img class="d-block img-fluid" src="<?php echo base_url() ?>assets/img/promo2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+              <img class="d-block img-fluid" src="<?php echo base_url() ?>assets/img/promo3.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

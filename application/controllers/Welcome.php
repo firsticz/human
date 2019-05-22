@@ -31,7 +31,30 @@ class Welcome extends CI_Controller {
 	}
 	public function login()
 	{
-		$this->load->view('login');
+		$this->load->view('header');
+		$this->load->view('login2');
+	}
+	public function food()
+	{
+		$this->load->model('FoodModel');
+		$food = $this->FoodModel->getfood();
+		$data['food'] = $food;
+
+		$this->load->view('header');
+		$this->load->view('navbar');
+		$this->load->view('food', $data);
+		$this->load->view('footer');
+	}
+	public function drink()
+	{
+		$this->load->model('FoodModel');
+		$drink = $this->FoodModel->getdrink();
+		$data['drink'] = $drink;
+
+		$this->load->view('header');
+		$this->load->view('navbar');
+		$this->load->view('drink', $data);
+		$this->load->view('footer');
 	}
 
 	public function checkLogin(){

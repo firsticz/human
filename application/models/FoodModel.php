@@ -26,5 +26,12 @@ class FoodModel extends CI_Model
         $sql = "SELECT * FROM food";
 		$query = $this->db->query($sql);
 		return $query;
+		}
+		
+		public function getdrink()
+    {
+        $sql = "SELECT * FROM drink";
+		$query = $this->db->query($sql);
+		return $query;
     }
 }
