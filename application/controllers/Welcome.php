@@ -56,6 +56,20 @@ class Welcome extends CI_Controller {
 		$this->load->view('drink', $data);
 		$this->load->view('footer');
 	}
+	public function order()
+	{
+		$this->load->view('header');
+		$this->load->view('navbar');
+		$this->load->view('order');
+		$this->load->view('footer');
+	}
+	public function orderdetail()
+	{
+		$this->load->view('header');
+		$this->load->view('navbar');
+		$this->load->view('orderdetail');
+		$this->load->view('footer');
+	}
 
 	public function checkLogin(){
 		$id  = isset($_POST['id'])?$_POST['id']:"";

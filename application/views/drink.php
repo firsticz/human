@@ -15,7 +15,7 @@
       <div class="list-group">
         <a href="<?php echo base_url() ?>welcome/food" class="list-group-item">อาหาร</a>
         <a href="<?php echo base_url() ?>welcome/drink" class="list-group-item active">เครื่องดื่ม</a>
-        <a href="#" class="list-group-item">ประวัติการสั่งอาหาร</a>
+        <a href="<?php echo base_url() ?>welcome/order" class="list-group-item">ประวัติการสั่งอาหาร</a>
       </div>
 
     </div>

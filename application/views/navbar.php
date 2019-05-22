@@ -8,18 +8,18 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="<?php echo base_url() ?>welcome">Home
+            <a class="nav-link" href="<?php echo base_url() ?>welcome">หน้าแรก
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="<?php echo base_url() ?>welcome/food">อาหาร</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="<?php echo base_url() ?>welcome/drink">เครื่องดื่ม</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="<?php echo base_url() ?>welcome/order">ประวัติการสั่งอาหาร</a>
           </li>
         </ul>
       </div>
