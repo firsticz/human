@@ -60,16 +60,16 @@
                         <figure class="avatar">
                             <img src="http://localhost/human/img/test.png">
                         </figure>
-                        <form>
+                        <form action="<?php echo base_url('Welcome/checkLogin') ?>" method="post">
                             <div class="field">
                                 <div class="control">
-                                    <input class="input is-large" type="email" placeholder="username">
+                                    <input class="input is-large" type="text" placeholder="username" name="id">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input class="input is-large" type="password" placeholder="Your Password">
+                                    <input class="input is-large" type="password" placeholder="Your Password" name="password">
                                 </div>
                             </div>
                             <div class="field">
@@ -78,7 +78,7 @@
                   Remember me
                 </label>
                             </div>
-                            <button class="button is-block is-info is-large is-fullwidth" onclick="myFunction()">Login</button>
+                            <button class="button is-block is-info is-large is-fullwidth">Login</button>
                         </form>
                     </div>
                     <p class="has-text-grey">
@@ -91,13 +91,6 @@
         </div>
     </section>
    
-    <script>
-        function myFunction() {
-          alert("เข้าสู่ระบบสำเร็จ")
-          location.replace("http://localhost/human/");
-        }
-    </script>
-  
 </body>
 
 </html>

@@ -20,12 +20,34 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		// $this->load->view('nav');
-		$this->load->view('home');
+		$this->load->model('FoodModel');
+		$food = $this->FoodModel->getfood();
+		$data['food'] = $food;
+
+		$this->load->view('header');
+		$this->load->view('navbar');
+		$this->load->view('home', $data);
+		$this->load->view('footer');
 	}
 	public function login()
 	{
-		// $this->load->view('nav');
 		$this->load->view('login');
+	}
+
+	public function checkLogin(){
+		$id  = isset($_POST['id'])?$_POST['id']:"";
+		$pass = isset($_POST['password'])?$_POST['password']:"";
+		$this->load->model('FoodModel');
+		$result = $this->FoodModel->checkLogin($id,$pass);
+		if($result){
+			echo '<script>alert("Login Success")</script>';
+			redirect('Welcome/');
+
+		}else{
+			echo "<script>alert('username หรือ password ไม่ถูกต้อง');
+				window.location.href='login';
+				</script>";
+		}
+			
 	}
 }
