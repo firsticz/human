@@ -41,7 +41,7 @@ class Welcome extends CI_Controller {
 		$result = $this->FoodModel->checkLogin($id,$pass);
 		if($result){
 			echo '<script>alert("Login Success")</script>';
-			redirect('Welcome/');
+			redirect('welcome/');
 
 		}else{
 			echo "<script>alert('username หรือ password ไม่ถูกต้อง');

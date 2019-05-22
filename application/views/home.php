@@ -52,121 +52,40 @@
 
         <div class="row">
 
-        <?php
-          foreach ($food->result() as $row) {
-            ?>
-            <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="<?php echo base_url() ?>assets/img/<?php echo $row->pic ?>" alt=""></a>
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a href="#"><?php echo $row->foodname ?></a>
-                </h3>
-                <h5><?php echo $row->price ?> Bath</h5>
-                <p class="card-text">
-                  <button class="btn btn-info btn-lg" onclick="conferm()">
-                    <span class="right txt"><i class="fa fa-shopping-basket"></i></span>
-                  </button>
-                </p>
-              </div>
-              <div class="card-footer">
-                <?php
-                  $i = 0;
-                  for($i;$i<$row->rating;$i++){
-                    echo '<span class="fa fa-star checked"></span>';
-                  }
-                  while($i != 5){
-                    echo '<span class="fa fa-star"></span>';
-                    $i++;
-                  }
-                ?>
-              </div>
-            </div>
-          </div>
           <?php
-          }
+            foreach ($food->result() as $row) {
+              ?>
+              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href=""><img class="card-img-top" src="<?php echo base_url() ?>assets/img/<?php echo $row->pic ?>" alt=""></a>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#"><?php echo $row->foodname ?></a>
+                  </h3>
+                  <h5><?php echo $row->price ?> Bath</h5>
+                  <p class="card-text">
+                    <button class="btn btn-info btn-lg" onclick="conferm()">
+                      <span class="right txt"><i class="fa fa-shopping-basket"></i></span>
+                    </button>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <?php
+                    $i = 0;
+                    for($i;$i<$row->rating;$i++){
+                      echo '<span class="fa fa-star checked"></span>';
+                    }
+                    while($i != 5){
+                      echo '<span class="fa fa-star"></span>';
+                      $i++;
+                    }
+                  ?>
+                </div>
+              </div>
+            </div>
+            <?php
+            }
           ?>
-          
-
-          <!-- <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Two</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Three</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Four</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Five</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Six</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div> -->
 
         </div>
         <!-- /.row -->
