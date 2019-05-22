@@ -50,4 +50,8 @@ class Welcome extends CI_Controller {
 		}
 			
 	}
+	public function test()
+	{
+		$this->load->view('menu');
+	}
 }

@@ -15,5 +15,13 @@
 
   <!-- Custom styles for this template -->
   <link href="<?php echo base_url();?>assets/css/shop-homepage.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <style>
+    .checked {
+      color: orange;
+    }
+    .illustration {
+      width: 100%;
+    }
+</style>
 </head>

@@ -11,7 +11,7 @@
 
       <div class="col-lg-3">
 
-        <h1 class="my-4">Wongnok</h1>
+        <h1 class="my-4"><img class='illustration' src="<?php echo base_url() ?>assets/img/logos.png" alt="" ></h1>
         <div class="list-group">
           <a href="#" class="list-group-item">อาหาร</a>
           <a href="#" class="list-group-item">เครื่องดื่ม</a>
@@ -63,10 +63,23 @@
                   <a href="#"><?php echo $row->foodname ?></a>
                 </h3>
                 <h5><?php echo $row->price ?> Bath</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <p class="card-text">
+                  <button class="btn btn-info btn-lg" onclick="conferm()">
+                    <span class="right txt"><i class="fa fa-shopping-basket"></i></span>
+                  </button>
+                </p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+                <?php
+                  $i = 0;
+                  for($i;$i<$row->rating;$i++){
+                    echo '<span class="fa fa-star checked"></span>';
+                  }
+                  while($i != 5){
+                    echo '<span class="fa fa-star"></span>';
+                    $i++;
+                  }
+                ?>
               </div>
             </div>
           </div>
