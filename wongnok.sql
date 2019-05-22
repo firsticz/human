@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2019 at 08:54 PM
+-- Generation Time: May 22, 2019 at 09:44 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 5.6.40
 
@@ -44,7 +44,8 @@ INSERT INTO `drink` (`drinkid`, `drinkname`, `price`, `pic`, `rating`) VALUES
 (2, 'น้ำพันซ์', '25', 'phun.png', 4),
 (3, 'น้ำเก็กฮวย', '25', 'lemon.png', 3),
 (4, 'น้ำเฉาก๊วย', '25', 'chow.png', 3),
-(5, 'น้ำมะพร้าว', '25', 'pow.png', 3);
+(5, 'น้ำมะพร้าว', '25', 'pow.png', 3),
+(6, 'น้ำส้มคั้น', '25', 'som.png', 3);
 
 -- --------------------------------------------------------
 
@@ -70,7 +71,8 @@ INSERT INTO `food` (`foodid`, `foodname`, `price`, `pic`, `discription`, `rating
 (3, 'ผัดกะเพรา', '45', 'patk.png', '', 5),
 (4, 'โจ๊ก', '40', 'jok.png', '', 3),
 (5, 'ข้าวยำ', '60', 'yum.png', '', 3),
-(6, 'มักกะโรนี', '40', 'muk.png', '', 3);
+(6, 'มักกะโรนี', '40', 'muk.png', '', 3),
+(7, 'ผัดผักบุ้ง', '30', 'kai.png', '', 2);
 
 -- --------------------------------------------------------
 
@@ -121,13 +123,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `drink`
 --
 ALTER TABLE `drink`
-  MODIFY `drinkid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `drinkid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `food`
 --
 ALTER TABLE `food`
-  MODIFY `foodid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `foodid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user`
