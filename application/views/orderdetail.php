@@ -90,11 +90,11 @@
                         <td>   </td>
                         <td>
                         <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                            <span class="glyphicon glyphicon-shopping-cart"></span> เลือกซื้อต่อ
                         </button></td>
                         <td>
                         <button type="button" class="btn btn-success">
-                            Checkout <span class="glyphicon glyphicon-play"></span>
+                            เช็คบิล <span class="glyphicon glyphicon-play"></span>
                         </button></td>
                     </tr>
                 </tbody>
